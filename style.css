@@ -155,8 +155,25 @@ margin-right: 3%;
 
 /*INICIO DO CSS DA PÁGINA NOTÍCIAS*/
 
+.btn a{
+  color: white;
+  text-decoration: none;
+}
+.btn a:hover{
+  color:aquamarine;
+}
+.card a{
+  color: #9da18f;
+}
+.card a:hover{
+  color: white;
+}
 .artigos{
   height: auto;
+}
+
+.tamanhoCarrousel{
+height: 500px;
 }
 /*FIM DO CSS DA PÁGINA NOTÍCIAS*/
 
