@@ -1,0 +1,247 @@
+
+/*CSS PRINCIPAL DO PROJETO GAMEBOOK*/
+/*Aqui contém configurações gerais para todas as páginas 
+e configuração para a página home/index */
+
+/*Créditos
+Programação: Robert, Ruan, Raquel, Tuts;
+Design: Fernandes, Vitória;
+Textos: Lone, Ricardo, Paula, Tuts;*/
+
+
+/*Seletor universal*/
+*{
+  padding: 0;
+  margin: 0; 
+  text-decoration: none;
+  list-style: none;
+}
+
+/*DEFINIÇÕES GERAIS*/
+:root{
+  --backgroundsite: rgb(27, 23, 50);
+  --cabecalhoBG: linear-gradient(180, rgb(34,20,52), rgb(87,	35,	128));
+  --corgeral: linear-gradient( rgb(160,	69,	168), rgb(130,	86,	255));
+  --rodape: linear-gradient( rgb(139,	110,	187), rgb(126,	85,	193));
+  --branco: white;
+}
+
+.espacoEntreAreas{
+  padding-top: 130px;
+}
+
+
+/*DEFINIÇÃO DE BACKGROUNDS*/
+div .card{
+  background-color:blueviolet; 
+}
+
+footer{
+  background-image: linear-gradient( rgb(139,	110,	187), rgb(126,	85,	193));
+}
+section{
+  background-color: rgb(27, 23, 50);
+}
+
+/*DEFINIÇÕES DE TIPOGRAFIA*/
+p{
+  /*1em equivale a 16pixels*/
+  font-size: 1em;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+h1, h2, h3, h4, h5{
+  color: white;
+  font-family: "Play", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+
+/*CSS DO CABEÇALHO. Repete em todas as páginas*/
+
+header{
+  background-color: var(--backgroundsite);
+  height: auto;
+  width: 100%;
+  border-bottom-color: red;
+  }
+
+  
+  hr{
+    height: 5px;
+    color: red;
+  }
+  
+  .cabecalho{
+    height: 12vh;
+    width: 100%;
+  }
+  
+  .logo{
+    position: relative;
+    left: 0;
+    padding: 10px;
+  }
+  .logoimg{
+    height: 95px;
+    width: 100px;
+  }
+  .buscacabecalho{
+    margin-left: 30%;
+    width: 40%;
+  }
+  
+  .headeruser{
+  margin-right: 3%;
+  }
+  .userimg{
+    height: 100%;
+    width: 100%;
+  }
+  
+  .nav-item a{
+    color:white;
+    font-size: 120%;
+  }
+  .nav-link{
+    background-image:linear-gradient( rgb(160,	69,	168), rgb(130,	86,	255)); 
+    color:white;
+  }
+  
+  .navbar-toggler{
+    background-image:linear-gradient( rgb(160,	69,	168), rgb(130,	86,	255)); 
+  }
+  
+  
+  .buttonNav{
+    align-self:center;
+    color: white;
+    border-color: transparent;
+    background-color: var(--backgroundsite);
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    
+  }
+  
+  .buttonNavActual{
+    align-self:center;
+    color: white;
+    border-color: transparent;
+    background-color: var(--backgroundsite);
+    width: 150px;
+    height: 50px;
+    border-bottom-color: blueviolet;
+    border-width: 5px;
+    border-radius: 5px;
+  }
+  
+  .navDiv{
+    align-self: center;
+    background-color: var(--backgroundsite);
+    text-align: center;
+  }
+  
+  
+  .buttonNav:hover{
+    filter: brightness(150%);
+  }
+  
+  .buttonNavActual:hover{
+    filter: brightness(150%);
+  }
+  
+  .linkButtons{
+    color: var(--backgroundsite);
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width:992px){
+    
+    .logoimg{
+      height: 80px;
+      width: 85px;
+    }
+    .buscacabecalho{
+      margin-left: 10%;
+      width: 45%;
+    }
+    .userimg{
+      height: 85%;
+      width: 85%;
+    }
+  }
+  
+  @media (orientation: portrait){
+    .buscacabecalho{
+    display: none;
+    }
+    .imagemlogin{
+      display: none;
+    }
+  }
+  
+/*FIM DA ÁREA CABEÇALHO*/
+
+
+/*INICIO DA ÁREA NOTÍCIAS DA SEMANA HOME*/
+.noticiasbannerhome{
+ text-decoration: none;
+ font-size: larger;
+}
+.itensdobanner p{
+  padding: 15px;
+  text-align: center;
+}
+.bannernoticias{
+  height: 15rem;
+  width: 30rem;
+}
+/*FIM DA ÁREA NOTÍCIAS DA SEMANA HOME*/
+
+
+
+
+/*INICIO DA ÁREA ARTIGOS HOME*/
+.homeartigos{
+  height: 700px;
+
+}
+.imgobra{
+  height: 80%;
+  width: 60%;
+}
+
+
+/*FIM DA ÁREA ARTIGOS HOME*/
+
+/*INICIO DA ÁREA RODAPÉ (que se repete em todas as páginas)*/
+
+.listarodape a{
+  text-decoration: none;
+  color:white;
+}
+/*FIM DA ÁREA RODAPÉ*/
+
+/*FIM CSS DO HOME*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+
+
+body{
+    background-color: rgb(27, 23, 50);
+}
+
+a{
+    color: blueviolet;
+}
+
+label{
+    font-size: 14px;
+}
+
+.Components{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputsDiv{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs{
+    color: white;
+    width:100%;
+    min-width: 200px;
+    margin: 10px;
+    background-color: white;
+    height: 30px;
+    padding: 5px;
+    text-align:center;
+    border-color: grey;
+    border-radius: 5px;
+    
+}
+
+/*150px*/
+.maxlogo{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.imgLogo{
+    width: 30%;
+    height: 30%;
+}
+
+.submitButton{
+    padding: 10px;
+    margin: 5px;
+    height: 40px;
+    border-radius: 25px;
+    color: blueviolet;
+    width: 15%;
+    min-width: 150px;
+}
+
+.labelLinkLogin{
+    position: absolute;
+    bottom: 40px;
+    padding: 20px;
+    color: white;
+}
+.labelLinkLogin2{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+  }
+
+.inputs:focus{
+    border-color: blueviolet;
+    outline-color: blueviolet;
+    outline: blueviolet;
+    color: blueviolet;
+    color: blueviolet;
+    
+    
+}
+
+
+@media screen {
+    
+}
