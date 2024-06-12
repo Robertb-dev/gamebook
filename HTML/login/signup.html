@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/signup.css">
+    <title>SignUP</title>
+</head>
+<body>
+
+    
+    
+    <div class="Components">
+
+        <div id="msgError"></div>
+
+        <div class="maxlogo">        
+    <img src="../imagens/login/logao.png" class="imgLogo">
+        </div>
+
+        <div class="inputsDiv">
+            
+            <input type="email" id="email"placeholder="Email" class="inputs"></input>
+            <label class="labelEmail" id="labelEmail"></label>
+            <input type="usuário" id="usuario"placeholder="Usuário" class="inputs"></input>
+            <label class="labelUser" id="labelUser"></label>
+            <input type="password" id="senha" placeholder="Senha" required class="inputs" />
+            <input type="password" id="confirmSenha" placeholder="Confirme a sua Senha" required class="inputs" />
+            <label class="labelPassword" id="labelPassword"></label>
+
+        </div>
+        <button class="submitButton"  id="buttonCadastrar" onclick="cadastrar()"><strong>Cadastrar-se</strong></button>
+        <label class="labelLinkLogin">Já possui conta? <a href="login2.html">Fazer Login</a></label>
+        <label class="labelLinkLogin2">Deseja voltar? <a href="login2.html">Home</a></label>
+    </div>
+    <script src="../../JS/signup.js"></script>
+</body>
+</html>
