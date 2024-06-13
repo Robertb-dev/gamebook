@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--link CSS-->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/styleArtigos.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--Font Exo-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Gamebook noticias</title>
+  </head>
+<body>
+   
+  <header>
+    <nav class="navbar cabecalho mb-5">
+      <div class="container">
+        
+
+        <div class="logo">
+        <a class="navbar-brand" href="../index.html">
+          <img class="logoimg" src="imagens/home/logosemfundo.png" alt="Logo">
+        </a>
+        </div>
+
+      <div class="buscacabecalho">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success " type="submit">Search</button>
+        </form>
+        </div>
+
+        <div class="headeruser ">
+        <a class="navbar-brand" href="login.html">
+          <img class="userimg" src="imagens/home/Hacker-icon.png" alt="usuário"></a>
+        </div>
+        </div>
+    </nav>
+
+    <!--Navegação de links-->
+    <div class="navDiv" id="navDiv">
+
+      <a class="linkButtons" href="artigos.html">
+      <button class="buttonNavActual">Artigos</button>           
+      </a>
+
+      <a class="linkButtons" href="noticias.html">
+        <button class="buttonNav">Notícias</button>           
+        </a>
+
+      <a class="linkButtons" href="../index.html">
+        <button class="buttonNav">Home</button>
+      </a>
+      
+      <a class="linkButtons" href="quemsomos.html">
+        <button class="buttonNav">Quem Somos</button>
+      </a>
+
+      <a class="linkButtons" href="fanmade.html">
+        <button class="buttonNav">Fanmade</button>
+      </a>
+
+      <a class="linkButtons" href="login.html">
+        <button class="buttonNav">Login</button>
+      </a>
+
+    </div>
+</header>
+
+<div class="bg-dark bg-gradient"><!--Pedaço de pão na rua pro cabra se situar-->
+  <div class="container pb-2">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Artigos</li>
+    </ol>
+  </nav>
+  </div>
+  </div>
+
+<!--Artigos de fãs, são artigos mais fuleiros-->
+<section>
+<div class="container pt-5">
+<div class="d-flex justify-content-center">
+  <h2>Artigos dos fãs</h2>
+</div>
+
+<div class="row">
+  <div class="col-md-5 mt-5"><!--Inicio da sessão descrição-->
+    <h2 class="d-flex justify-content-center mb-4">Artigo em destaque</h2>
+    <div class="card mb-3" style="background-color: blueviolet;">
+      <img src="imagens/artigos/moxxi.jpg" class="card-img-top" alt="moxxi">
+      <div class="card-body">
+        <h5 class="card-title">Moxxi, Você esta com sorte? Querido?</h5>
+        <p class="card-text">Moxxi é uma personagem de Boderlands, sua primeira aparição foi na DLC do boderlands 1, underdome riot, onde o jogador faz muitas missões. Ao longo da história do game, ela teve diversos casamentos, dois filhos, e várias aventuras amorosas. Suas missões geralmente envolve conflitos com seus ex-namorados, sua temática é um amor perigoso que pode seduzir até o mais gélido jogador.</p>
+        <img class="estrelas" src="imagens/artigos/estrela.png">
+        <img class="estrelas" src="imagens/artigos/estrela.png">
+        <img class="estrelas" src="imagens/artigos/estrela.png">
+        <img class="estrelas" src="imagens/artigos/estrela.png">
+        <img class="estrelas" src="imagens/artigos/meiaestrela.png">
+      </div>
+    </div>
+  </div><!--Fim da sessão descrição-->
+
+<div class="col-md-7 mt-5"><!--Inicio da sessão artigos relacionados-->
+<h2 class="d-flex justify-content-center mb-4">Mais artigos</h2><!--vamos criar uma variável de js no lugar da moxxi-->
+
+<div class="card mb-3 mt-2" style="max-width: 660px;"><!--primeiro card-->
+  <div class="row g-0">
+    <div class="col-md-5">
+     <img src="imagens/artigos/arma 1.jpg" class="img-fluid rounded-start" alt="arma1">
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <h5 class="card-title">A história de Prince of Persia</h5>
+        <p class="card-text">Essa arma é liberada depois da missão "Fotos Quentes Demais", onde você recupera fotos "delicadas" da Moxxi, no vulcão Hefaesto e entrega a ela em vez do ex-namorado...</p> 
+        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="artigos.html"> Leia mais</a></button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card mb-3 mt-2" style="max-width: 660px;"><!--Segundo card-->
+  <div class="row g-0">
+    <div class="col-md-5">
+     <img src="imagens/artigos/arma2.jpg" class="img-fluid rounded-start fundoroxo" alt="arma2">
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <h5 class="card-title">A relação entre Bioshock e Bioshock2</h5>
+        <p class="card-text fundoroxo">Essa arma é liberada depois da missão "A revolta dos cornos", onde você luta contra um exercito de ex-namorados da Moxxi que tentam invadir a casa dela...</p> 
+        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="artigos.html"> Leia mais</a></button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3 mt-2" style="max-width: 660px;"><!--terceiro card-->
+  <div class="row g-0">
+    <div class="col-md-5">
+     <img src="imagens/artigos/moxxi cosplay.jpg" class="img-fluid rounded-start" alt="moxxi cosplay">
+    </div>
+    <div class="col-md-7">
+      <div class="card-body">
+        <h5 class="card-title">A arte do cosplay</h5>
+        <p>Muitas pessoas gostam de usar cosplay, confira algumas customizações</p>
+        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="fanmade.html"> Leia mais</a></button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div><!--Fim da row dessa seção-->
+</div>
+</section>
+
+<!--FIM DA SEÇÃO JOGOS DA SEMANA-->
+
+
+
+
+<!--INICIO DA SEÇÃO ULTIMOS ARTIGOS-->
+<section>
+  <div class="container pt-5 pb-5">
+    <div class="d-flex justify-content-center pb-5">
+      <h2>Ultimos artigos</h2>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">StarFox</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!--FIM DA SEÇÃO ULTIMOS ARTIGOS-->
+
+
+
+
+<!--INICIO DA SEÇÃO MELHORES COMENTÁRIOS-->
+
+
+<!--FIM DA SEÇÃO MELHORES COMENTÁRIOS-->
+
+
+
+
+
+<footer>
+  <div class="container rodape">
+    <div class="row pt-5">
+      <div class="col-3 ">
+        <h3>Plataformas</h3>
+        <ul class="listarodape">
+          <li><a href="artigos.html">Pc Master Race</a></li>
+          <li><a href="artigos.html">Playstation</a></li>
+          <li><a href="artigos.html">Xbox</a></li>
+          <li><a href="artigos.html">Nintendo</a></li>
+        </ul>
+      </div>
+
+      <div class="col-3">
+        <h3>Tecnologias</h3>
+        <ul class="listarodape">
+          <li><a href="artigos.html">Apple Arcade</a></li>
+          <li><a href="artigos.html">Windows</a></li>
+          <li><a href="artigos.html">Hardware</a></li>
+          <li><a href="artigos.html">Mobile</a></li>
+        </ul>
+      </div>
+
+      <div class="col-3 ">
+        <h3>Anuncios</h3>
+        <ul class="listarodape">
+          <li><p>Anuncie aqui</p></li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
