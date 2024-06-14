@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/styleNoticias.css">
   
 
     <!-- Bootstrap CSS -->
@@ -20,141 +21,130 @@
   </head>
 <body>
    
-<header>
-    <nav class="navbar cabecalho mb-5">
-      <div class="container">
-        
-
-        <div class=" logo">
-        <a class="navbar-brand" href="../index.html">
-          <img class="logoimg" src="../imagens/home/logo.png" alt="Logo">
-        </a>
-        </div>
-
-      <div class=" buscacabecalho">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-
-        <div class="headeruser">
-        <a class="navbar-brand" href="../login.html">
-          <img class="userimg" src="../imagens/home/Usuário.png" alt="usuário"></a>
-        </div>
-        </div>  
-    </nav>
-
-    <!--Navegação de links-->
-    <nav class="navbar navbar-expand-md">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item me-5">
-            <a class="btn nav-link" href="../artigos.html" role="button">Artígos</a>
-          </li>
-          <li class="nav-item me-5">
-            <a class="btn nav-link" href="../noticias.html" role="button">Notícias</a>
-          </li>
-          <li class="nav-item me-5">
-            <a class="btn nav-link" href="../index.html" role="button">Home</a>
-          </li>
-          <li class="nav-item me-5">
-            <a class="btn nav-link" href="../fanmade.html" role="button">Fanmade</a>
-          </li>
-          <li class="nav-item me-5">
-            <a class="btn nav-link" href="../login.html" role="button">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </nav>
-</header>
-
-
-<div class="bg-dark bg-gradient"><!--Pedaço de pão na rua pro cabra se situar-->
-  <div class="container pb-2">
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="../noticias.html">Notícias</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Tudo sobre Assassin's Creed Shadows</li>
-    </ol>
-  </nav>
-  </div>
-  </div>
+  <header>
+    <div class="container pt-3">
+      <nav class="navbar cabecalho mb-5">
+    
+          <div class="logo">
+            <div class="tamanhologo  d-none d-sm-block d-sm-none d-md-block"><!--Tamanho da Logo para desktop-->
+          <a class="navbar-brand" href="../../index.html">
+            <img class="logoimg img-fluid" src="../imagens/home/logo 1.png" alt="Logo">
+          </a>
+          </div>
   
-
-<section><!--SEÇÃO NOTÍCIA-->
-<div class="container">
-<div class="d-flex justify-content-center pt-5">
-  <h2> Tudo sobre Assassin's Creed Shadows</h2>
-</div>
-<div class="d-flex justify-content-center pt-5">
-  <img class="w-50 h-50" src="../imagens/noticias/assassins.jpg">
-</div>
-
-<div class="pt-5 pb-5">
-  <p>A saga dos Assassinos continua, e com este novo lançamento a <a href="https://pt.wikipedia.org/wiki/Ubisoft"><strong>Ubisoft</strong></a> garante uma experiência melhor e mais elaborada nesta versão em comparação com os seus lançamentos passados, com menos poluição visual e com tema aclamado pelo público, mesmo com as possíveis atualizações. As críticas demonstram insatisfação, principalmente em relação às mudanças como a temática de parkour que no trailer aparenta ser deixada para trás e o protagonista ser negro em um ambiente oriental mesmo tendo embasamento histórico em um homem real chamado Yasuke. Com essas críticas, o jogo ainda mantém uma forte pré-venda no mercado,o  lançamento será dia 15 de novembro deste ano.
-  </p>
-</div>
-
-</div><!--Fim do container-->
-</section>
-
-
-<section><!--SEÇÃO COMENTÁRIOS-->
-<div class="container">
-      <div class="d-flex justify-content-center">
-      <h2>Comentários</h2>
+          <div class="tamanhologo  d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none "><!--Tamanho da Logo para mobile-->
+            <a class="navbar-brand" href="../../index.html">
+              <img class="logoimg img-fluid" src="../imagens/home/logo 2.png" alt="Logo">
+            </a>
+            </div>
+        </div>
+  
+          <div class="buscacabecalho me-2 mt-2 order-1">
+            <form class="searchForm">
+              <div class="ocupaEspaço"></div>
+              <input class="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="searchButton" type="submit"><img class="searchIcon" src="../imagens/home/lupabranca.png"> </button>
+            </form>
+          </div>
+  
+          <div class="headeruser order-2">
+          <a class="navbar-brand" href="../login.html">
+            <img class="userimg" src="../imagens/home/Hacker-icon.png" alt="usuário"></a>
+          </div>
+           </nav>
+        </div>
+  
+  
+      <!--Navegação de links-->
+   
+      <div class="navDiv" id="navDiv">
+  
+        <a class="linkButtons" href="../artigos.html">
+        <button class="buttonNav">Artigos</button>           
+        </a>
+  
+        <a class="linkButtons" href="../noticias.html">
+          <button class="buttonNavActual">Notícias</button>           
+          </a>
+  
+        <a class="linkButtons" href="../../index.html">
+          <button class="buttonNav">Home</button>
+        </a>
+        
+        <a class="linkButtons" href="../quemsomos.html">
+          <button class="buttonNav">Quem Somos</button>
+        </a>
+  
+        <a class="linkButtons" href="../fanmade.html">
+          <button class="buttonNav">Fanmade</button>
+        </a>
+  
+        <a class="linkButtons" href="../login.html">
+          <button class="buttonNav">Login</button>
+        </a>
+  
+      </div> <!--Fim da Navegação de links-->
+  
+        <div class="divSeparacao"><!--breadcrumbs-->
+      <div class="pb">
+      </div>
     </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="../noticias.html">Notícias</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Tudo sobre Assassin's Creed Shadows</li>
+      </ol>
+    </nav>
+  
+  </header>
 
 
-  <div class="comentarios">
-    <form  id="commentForm">
-  <div class="d-flex justify-content-center">
-  <div class="mb-3 mt-4 w-75">
-    <label for="name" class="form-label">Usuário:</label>
-    <input type="text" class="form-control" id="name" required placeholder="Zézinho 123">
+  <section><!--SEÇÃO NOTÍCIA-->
+  <div class="container">
+  <div class="d-flex justify-content-center pt-5">
+    <h2> Tudo sobre Assassin's Creed Shadows</h2>
   </div>
+  <div class="d-flex justify-content-center pt-5">
+    <img class="w-50 h-50" src="../imagens/noticias/assassins.jpg">
   </div>
-  <div class="d-flex justify-content-center">
-  <div class="mb-3 mb-5 w-75">
-    <label for="comment" class="form-label">Comentários:</label>
-    <textarea class="form-control" id="comment" rows="3" required></textarea>
-    <button class="btn mt-3 " type="submit">Enviar Comentário</button>
+
+  <div class="pt-5 pb-5">
+    <p>A saga dos Assassinos continua, e com este novo lançamento a <a href="https://pt.wikipedia.org/wiki/Ubisoft"><strong>Ubisoft</strong></a> garante uma experiência melhor e mais elaborada nesta versão em comparação com os seus lançamentos passados, com menos poluição visual e com tema aclamado pelo público, mesmo com as possíveis atualizações. As críticas demonstram insatisfação, principalmente em relação às mudanças como a temática de parkour que no trailer aparenta ser deixada para trás e o protagonista ser negro em um ambiente oriental mesmo tendo embasamento histórico em um homem real chamado Yasuke. Com essas críticas, o jogo ainda mantém uma forte pré-venda no mercado,o  lançamento será dia 15 de novembro deste ano.
+    </p>
   </div>
+
+  </div><!--Fim do container-->
+  </section>
+
+
+  <section><!--SEÇÃO COMENTÁRIOS-->
+  <div class="container pb-5">
+        <div class="d-flex justify-content-center">
+        <h2>Comentários</h2>
+      </div>
+
+    <div class="comentarios">
+      <form  id="commentForm">
+    <div class="d-flex justify-content-center">
+    <div class="mb-3 mt-4 w-75 ">
+      <label for="name" class="form-label">Usuário:</label>
+      <input type="text" class="form-control" id="name" required placeholder="Zézinho 123">
+    </div>
+    </div>
+    <div class="d-flex justify-content-center">
+    <div class="mb-3 mb-5 w-75 bota">
+      <label for="comment" class="form-label">Comentários:</label>
+      <textarea class="form-control" id="comment" rows="3" required></textarea>
+      <button class="btn mt-3 " type="submit">Enviar Comentário</button>
+    </div>
+    </div>
+    </form>
+    <div id="comments"></div>
+  </div><!--Fim da seção comentários-->
   </div>
-  </form>
-  <div id="comments"></div>
-</div><!--Fim da seção comentários-->
-</div>
-</div><!--Fim do container-->
-</section>
-
-
-
-<!--
-<section>
-<div class="container container2">
-  <h1>Comentários</h1>
-  <form id="commentForm">
-    <label for="name">Usuario:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="comment">Comentário:</label>
-    <textarea id="comment" name="comment" rows="4" required></textarea>
-    <button type="submit">Enviar Comentário</button>
-  </form>
-  <div id="comments"></div>
-</div>
-</section>-->
-
-
-
-
+  </div><!--Fim do container-->
+  </section>
 
 <footer>
   <div class="container rodape">
@@ -162,20 +152,20 @@
       <div class="col-3 ">
         <h3>Plataformas</h3>
         <ul class="listarodape">
-          <li><a href="artigos.html">Pc Master Race</a></li>
-          <li><a href="artigos.html">Playstation</a></li>
-          <li><a href="artigos.html">Xbox</a></li>
-          <li><a href="artigos.html">Nintendo</a></li>
+          <li><a href="../artigos.html">Pc Master Race</a></li>
+          <li><a href="../artigos.html">Playstation</a></li>
+          <li><a href="../artigos.html">Xbox</a></li>
+          <li><a href="../artigos.html">Nintendo</a></li>
         </ul>
       </div>
 
       <div class="col-3">
         <h3>Tecnologias</h3>
         <ul class="listarodape">
-          <li><a href="artigos.html">Apple Arcade</a></li>
-          <li><a href="artigos.html">Windows</a></li>
-          <li><a href="artigos.html">Hardware</a></li>
-          <li><a href="artigos.html">Mobile</a></li>
+          <li><a href="../artigos.html">Apple Arcade</a></li>
+          <li><a href="../artigos.html">Windows</a></li>
+          <li><a href="../artigos.html">Hardware</a></li>
+          <li><a href="../artigos.html">Mobile</a></li>
         </ul>
       </div>
 
@@ -194,6 +184,6 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="../../JS/scriptComentarios.js"></script>
   </body>
 </html>
