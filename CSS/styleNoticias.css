@@ -20,6 +20,20 @@
 .tamanhoCarrousel{
 height: 500px;
 }
+
+
+.buttonNavTopics{
+  align-self:center;
+  color: white;
+  border-color: transparent;
+  background-color: blueviolet;
+  width: 30%;
+  max-width: 150px;
+  min-width: 30px;
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px;
+}
 /*FIM DO CSS DA PÁGINA NOTÍCIAS*/
 
 
@@ -31,9 +45,11 @@ height: 500px;
 .comentarios{
   background-color:blueviolet;
   border-radius: 30px;
+  color:white;
 }
-.btn button{
-background-color:#71e902;
-}
+ .bota button{
+  background-color: #6610f2;
+  color: white;
+ }
 
 /*FIM DOS COMENTÁRIOS*/

@@ -15,36 +15,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+    <!-- FavIcon: Ruan-->
+    <link rel="icon" type="image/x-icon" href="HTML/imagens/home/logosemfundo.png">
+
     <title>Gamebook</title>
   </head>
 <body>
    
 <header>
+  <div class="container pt-3">
     <nav class="navbar cabecalho mb-5">
-      <div class="container">
-        
+
+      <!--  <div class="container">Area banner
+    <div class="mt-5 d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none ">
+      <img class="imgbanner" src="imagens/bannersitepequeno.png">
+     </div>
+ 
+     <div class="mt-5 d-none d-sm-block d-sm-none d-md-block">
+       <img class="imgbanner" src="imagens/bannersite.png">
+     </div>
+   </div>Fim da area banner
+   
+   
+   
+   -->
 
         <div class="logo">
+          <div class="tamanhologo  d-none d-sm-block d-sm-none d-md-block"><!--Tamanho da Logo para desktop-->
         <a class="navbar-brand" href="index.html">
-          <img class="logoimg" src="HTML/imagens/home/logosemfundo.png" alt="Logo">
+          <img class="logoimg img-fluid" src="HTML/imagens/home/logo 1.png" alt="Logo">
         </a>
         </div>
 
-      <div class="buscacabecalho">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success " type="submit">Search</button>
-        </form>
+        <div class="tamanhologo  d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none "><!--Tamanho da Logo para mobile-->
+          <a class="navbar-brand" href="index.html">
+            <img class="logoimg img-fluid" src="HTML/imagens/home/logo 2.png" alt="Logo">
+          </a>
+          </div>
+      </div>
+
+        <div class="buscacabecalho me-2 mt-2 order-1">
+          <form class="searchForm">
+            <div class="ocupaEspaço"></div>
+            <input class="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="searchButton" type="submit"><img class="searchIcon" src="HTML/imagens/home/lupabranca.png"> </button>
+          </form>
         </div>
 
-        <div class="headeruser ">
+        <div class="headeruser order-2">
         <a class="navbar-brand" href="HTML/login.html">
           <img class="userimg" src="HTML/imagens/home/Hacker-icon.png" alt="usuário"></a>
         </div>
-        </div>
-    </nav>
+         </nav>
+      </div>
+
 
     <!--Navegação de links-->
+ 
     <div class="navDiv" id="navDiv">
 
       <a class="linkButtons" href="HTML/artigos.html">
@@ -71,13 +98,21 @@
         <button class="buttonNav">Login</button>
       </a>
 
+    </div> <!--Fim da Navegação de links-->
+
+      <div class="divSeparacao"><!--breadcrumbs-->
+    <div class="pb">
     </div>
+  </div>
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0">
+      <li class="breadcrumb-item active" aria-current="page">Home</li>
+    </ol>
+  </nav>
+
 </header>
 
-<div class="bg-dark bg-gradient"><!--Pedaço de pão na rua pro cabra se situar-->
-  <div class="pb-5">
-  </div>
-  </div>
+
 
 <!--INICIO DA ÁREA NOTÍCIAS DA SEMANA HOME-->
 <section>

@@ -1,11 +1,6 @@
 
 
 
-
-
-
-
-
 /*INICIO DO CSS DA PÁGINA ARTIGOS DOS FÃS*/
 
 .estrelas{
@@ -13,5 +8,18 @@
   height: 5vh;
 }
 
+.btn a{
+  color: white;
+  text-decoration: none;
+}
+.btn a:hover{
+  color:aquamarine;
+}
+.card a{
+  color: #9da18f;
+}
+.card a:hover{
+  color: white;
+}
 /*FIM DO CSS DA PÁGINA ARTIGOS DOS FÃS*/
 
