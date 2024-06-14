@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+      <!-- FavIcon: Ruan-->
+      <link rel="icon" type="image/x-icon" href="imagens/home/logosemfundo.png">
+      
     <title>Gamebook fanmade</title>
   </head>
 <body>
@@ -26,16 +29,25 @@
         
 
         <div class="logo">
-        <a class="navbar-brand" href="../index.html">
-          <img class="logoimg" src="imagens/home/logosemfundo.png" alt="Logo">
+          <div class="tamanhologo  d-none d-sm-block d-sm-none d-md-block"><!--Tamanho da Logo para desktop-->
+        <a class="navbar-brand" href="index.html">
+          <img class="logoimg img-fluid" src="imagens/home/logo 1.png" alt="Logo">
         </a>
         </div>
 
-      <div class="buscacabecalho">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success " type="submit">Search</button>
-        </form>
+        <div class="tamanhologo  d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none "><!--Tamanho da Logo para mobile-->
+          <a class="navbar-brand" href="index.html">
+            <img class="logoimg img-fluid" src="imagens/home/logo 2.png" alt="Logo">
+          </a>
+          </div>
+      </div>
+
+        <div class=" buscacabecalho">
+          <form class="searchForm">
+            <div class="ocupaEspaço"></div>
+            <input class="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="searchButton" type="submit"><img class="searchIcon" src="../HTML/imagens/home/lupabranca.png"> </button>
+          </form>
         </div>
 
         <div class="headeruser ">
@@ -73,20 +85,18 @@
       </a>
 
     </div>
+
+    <div class="divSeparacao"><!--breadcrumbs-->
+      <div class="pb">
+      </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Fan Made</li>
+      </ol>
+    </nav>
 </header>
-
-
-<div class="bg-dark bg-gradient"><!--Pedaço de pão na rua pro cabra se situar-->
-  <div class="container pb-2">
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Fanmade</li>
-    </ol>
-  </nav>
-  </div>
-  </div>
-
 
 <!--INICIO ÁREA DO CARROSEL-->
 <section>
@@ -100,37 +110,28 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/shogun.jpg" class="card-img-top imagemdoscard" alt="shogun total war">
+            <img src="imagens/fanmade/Karma - League of Legends.png" class="card-img-top imagemdoscard" alt="shogun total war">
             <div class="card-body">
-              <h5 class="card-title">Shogun Total War</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">ultima atualização: 3 minutos</small>
+              <h5 class="card-title">Karma</h5>
+              <p class="card-text">Personagem Karma do LoL</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/redqueen.png" class="card-img-top imagemdoscard" alt="paizão">
+            <img src="imagens/fanmade/Ahri3 - League of Legends.png" class="card-img-top imagemdoscard" alt="paizão">
             <div class="card-body">
-              <h5 class="card-title">Alice madness return</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Atualização x minutos</small>
+              <h5 class="card-title">Ahri</h5>
+              <p class="card-text">Ahri do LoL em todo o seu estilo e carisma</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/stalker.jpg" class="card-img-top imagemdoscard" alt="...">
+            <img src="imagens/fanmade/Harvey - Stardew Valley.jpg" class="card-img-top imagemdoscard" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Stalker</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">algum texto</small>
+              <h5 class="card-title">Harvey</h5>
+              <p class="card-text">Personagem Harvey do Stardew Valley</p>
             </div>
           </div>
         </div>
@@ -140,37 +141,28 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/dishonored2.jpg" class="card-img-top imagemdoscard" alt="...">
+            <img src="imagens/fanmade/Homem aranha - gwen.jpg" class="card-img-top imagemdoscard" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Dishonored</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">sera que precisa disso?</small>
+              <h5 class="card-title">Spider-Gwen</h5>
+              <p class="card-text">Foi uma boa ideia torna-la uma menina-trans</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/bigdaddy.jpg" class="card-img-top imagemdoscard" alt="...">
+            <img src="imagens/fanmade/jogo de pc- Pathologic_.jpg" class="card-img-top imagemdoscard" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Big Daddy</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Tralala</small>
+              <h5 class="card-title">Pathologic</h5>
+              <p class="card-text">Strelok do game de terro Pathologic, você vai sujar suas calças se jogar</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/bigdaddy2.jpg" class="card-img-top imagemdoscard" alt="...">
+            <img src="imagens/fanmade/Riven - League of Legends.png" class="card-img-top imagemdoscard" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Big Daddy2</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">eu sou pequenoo</small>
+              <h5 class="card-title">Riven</h5>
+              <p class="card-text">Personagem Riven do League of Legends</p>
             </div>
           </div>
         </div>
@@ -180,37 +172,28 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/darkstalker.jpg" class="card-img-top imagemdoscard" alt="...">
+            <img src="imagens/fanmade/RPG - Sacramento_.jpg" class="card-img-top imagemdoscard" alt="...">
             <div class="card-body">
-              <h5 class="card-title">darkstalker</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <h5 class="card-title">Sacramento</h5>
+              <p class="card-text">Releitura de personagens do game de RPG "Sacramento's Gang"</p>
             </div>
           </div>
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/fracry2.jpg" class="card-img-top imagemdoscard" alt="paizão">
+            <img src="imagens/fanmade/RPG D&D - Elfa da lua.jpg" class="card-img-top imagemdoscard" alt="paizão">
             <div class="card-body ">
-              <h5 class="card-title">Far Cry</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <h5 class="card-title">RPG D&D</h5>
+              <p class="card-text">Elfa da lua do jogo de tabuleiro D&D</p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
-          </div>
         </div>
+      </div>
         <div class="col">
           <div class="card h-100">
-            <img src="imagens/fanmade/fracry6.jpg" class="card-img-top imagemdoscard" alt="...">
+            <img src="imagens/fanmade/Sucrose - Genshin Impact.png" class="card-img-top imagemdoscard" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Far Cry 6</h5>
-              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <h5 class="card-title">Sucrose</h5>
+              <p class="card-text">Personagem do anime "Genshin Impact"</p>
             </div>
           </div>
         </div>
@@ -237,177 +220,175 @@
   <div class="container espacoEntreAreas">
     <h2 class="text-center">Desafios e interações da comunidade</h2>
   </div>
-<div class="container">
-  <div class="overflow-scroll " style="height: 600px;">
+<div class="container ">
+  <div class="overflow-scroll" style="height: 600px;">
     
+    <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 1-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/171.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Ahri1 - League of Legends.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">171</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Ahri</h5>
+            <p class="card-text">Personagem do League of Legends</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 2-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/piroquio.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Ahri2 - League of Legends.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Pinoquio</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Ahri</h5>
+            <p class="card-text">Personagem do League of Legends</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 3-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/pinoquio.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Forager.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Pinoquio</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Forager</h5>
+            <p class="card-text">Ambientes do game "A volta dos que não foram 2: Em busca do encontrado"</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 4-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/valorant.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/IOAWN - Four Travelers.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Valorant</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">IOAWN</h5>
+            <p class="card-text">Four Travelers</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 5-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/valorant2.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Katana Zero.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Valorant2</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Katana Zero</h5>
+            <p class="card-text">Releitura do personagem Zero do anime "Tomeioh no kusai"</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 6-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/supermarket.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Limbo Fanart.jpg" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Supermarket</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Limbo</h5>
+            <p class="card-text">Fanart do game Limbo</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 7-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/overcooked.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Need For Speed (2015).png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Overcooked</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Need For Speed</h5>
+            <p class="card-text">Need For Speed mas Need For Gasolina também</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 8-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/gato.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Untitled goose game.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Gato</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Grand Goose Marfia</h5>
+            <p class="card-text">Seja o rei do parquinho dominando todos os territórios</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
+  <div class="d-flex justify-content-center">
     <div class="card mb-3 w-75"><!--CARD 9-->
       <div class="row g-0">
-        <div class="col-md-4">
-          <img src="imagens/fanmade/free fire.jpg" class="img-fluid rounded-start" alt="...">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Yumi - League of Legends.png" class="img-fluid rounded-start" alt="...">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-5">
           <div class="card-body">
-            <h5 class="card-title">Free Fire</h5>
-            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title">Yumi</h5>
+            <p class="card-text">League of Legends</p>
           </div>
         </div>
       </div>
     </div>
-
   </div>
+
+  <div class="d-flex justify-content-center">
+    <div class="card mb-3 w-75"><!--CARD 10-->
+      <div class="row g-0">
+        <div class="col-md-7">
+          <img src="imagens/fanmade/Zero - Megaman X.jpeg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-5">
+          <div class="card-body">
+            <h5 class="card-title">Zero</h5>
+            <p class="card-text">Personagem Zero da franquia Megaman X, personagem mais lindo e mais estiloso da era 2000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
 </div><!--FIM DO CONTAINER-->
 </section>
 <!--FIM DA ÁREA DE SCROLL-->
 
 
-<!--
-<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    
-aqui é parte do carrosel sem botões em baixo    
-
-
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>-->
-
-
-<!--
-Aqui é parte com botões em baixo
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
--->
 <section><!--INICIO DA ÁREA ARTISTAS-->
   <div class="container espacoEntreAreas">
     <h2 class="text-center">Artistas</h2>
@@ -524,7 +505,7 @@ Aqui é parte com botões em baixo
     <div class="card h-100">
       <img src="imagens/fanmade/anita.jpg" class="card-img-top imagemdoscardsartistas" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title11</h5>
+        <h5 class="card-title">Anita Malfatti</h5>
         <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
       </div>
     </div>
@@ -533,38 +514,14 @@ Aqui é parte com botões em baixo
     <div class="card h-100">
       <img src="imagens/fanmade/manet.jpg" class="card-img-top imagemdoscardsartistas" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title12</h5>
+        <h5 class="card-title">Édouard Manet</h5>
         <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top imagemdoscardsartistas" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title13</h5>
-        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top imagemdoscardsartistas" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title14</h5>
-        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top imagemdoscardsartistas" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title15</h5>
-        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-      </div>
-    </div>
-  </div>
+
+
+
 </div>
       </div><!--FIM DO TERCEIRO GRUPO DE CARDS-->
     </div>

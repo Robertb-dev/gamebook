@@ -17,6 +17,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+      <!-- FavIcon: Ruan-->
+      <link rel="icon" type="image/x-icon" href="imagens/home/logosemfundo.png">
+      
     <title>Gamebook noticias</title>
   </head>
 <body>
@@ -27,16 +30,25 @@
         
 
         <div class="logo">
-        <a class="navbar-brand" href="../index.html">
-          <img class="logoimg" src="imagens/home/logosemfundo.png" alt="Logo">
+          <div class="tamanhologo  d-none d-sm-block d-sm-none d-md-block"><!--Tamanho da Logo para desktop-->
+        <a class="navbar-brand" href="index.html">
+          <img class="logoimg img-fluid" src="imagens/home/logo 1.png" alt="Logo">
         </a>
         </div>
 
-      <div class="buscacabecalho">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success " type="submit">Search</button>
-        </form>
+        <div class="tamanhologo  d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none "><!--Tamanho da Logo para mobile-->
+          <a class="navbar-brand" href="index.html">
+            <img class="logoimg img-fluid" src="imagens/home/logo 2.png" alt="Logo">
+          </a>
+          </div>
+      </div>
+
+        <div class=" buscacabecalho">
+          <form class="searchForm">
+            <div class="ocupaEspaço"></div>
+            <input class="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="searchButton" type="submit"><img class="searchIcon" src="../HTML/imagens/home/lupabranca.png"> </button>
+          </form>
         </div>
 
         <div class="headeruser ">
@@ -74,18 +86,19 @@
       </a>
 
     </div>
+    <div class="divSeparacao"><!--breadcrumbs-->
+      <div class="pb">
+      </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Artigos</li>
+      </ol>
+    </nav>
+    
 </header>
 
-<div class="bg-dark bg-gradient"><!--Pedaço de pão na rua pro cabra se situar-->
-  <div class="container pb-2">
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Artigos</li>
-    </ol>
-  </nav>
-  </div>
-  </div>
 
 <!--Artigos de fãs, são artigos mais fuleiros-->
 <section>
@@ -100,8 +113,12 @@
     <div class="card mb-3" style="background-color: blueviolet;">
       <img src="imagens/artigos/moxxi.jpg" class="card-img-top" alt="moxxi">
       <div class="card-body">
-        <h5 class="card-title">Moxxi, Você esta com sorte? Querido?</h5>
-        <p class="card-text">Moxxi é uma personagem de Boderlands, sua primeira aparição foi na DLC do boderlands 1, underdome riot, onde o jogador faz muitas missões. Ao longo da história do game, ela teve diversos casamentos, dois filhos, e várias aventuras amorosas. Suas missões geralmente envolve conflitos com seus ex-namorados, sua temática é um amor perigoso que pode seduzir até o mais gélido jogador.</p>
+        <h5 class="card-title">Conheça Moxxi</h5>        
+        <p class="card-text">Mad Moxxi é uma personagem icônica e carismática da franquia Borderlands, desenvolvida pela Gearbox Software. Ela é conhecida por seu visual marcante, personalidade sedutora e papel como proprietária de diversos estabelecimentos de entretenimento no mundo caótico e pós-apocalíptico de Pandora.</p>
+        <p class="card-text">Moxxi é facilmente reconhecível por seu visual extravagante e provocativo, que inclui um chapéu de mestre de cerimônias, um vestido de cabaré com decote profundo, luvas longas e maquiagem marcante. Seu visual reflete sua personalidade audaciosa e seu papel como uma figura central no entretenimento e na vida noturna de Pandora.</p>
+        <p class="card-text">Moxxi é introduzida pela primeira vez em Borderlands 2 como a proprietária de Moxxi's Red Light, um bar onde os Caçadores de Vaults (Vault Hunters) podem interagir com ela e aceitar várias missões secundárias. Ela também desempenha um papel significativo no conteúdo para download (DLC) "Mad Moxxi's Underdome Riot" em Borderlands 1, onde organiza torneios de combate para os jogadores.
+
+          Em Borderlands 3, Moxxi continua a ser uma presença constante, dirigindo o bar Sanctuary III a bordo da nave dos Caçadores de Vaults. Ela também está envolvida em várias missões, incluindo o assalto ao cassino de Handsome Jack, "Moxxi's Heist of the Handsome Jackpot".</p>
         <img class="estrelas" src="imagens/artigos/estrela.png">
         <img class="estrelas" src="imagens/artigos/estrela.png">
         <img class="estrelas" src="imagens/artigos/estrela.png">
@@ -117,13 +134,13 @@
 <div class="card mb-3 mt-2" style="max-width: 660px;"><!--primeiro card-->
   <div class="row g-0">
     <div class="col-md-5">
-     <img src="imagens/artigos/arma 1.jpg" class="img-fluid rounded-start" alt="arma1">
+     <img src="imagens/artigos/cod.jpg" class="img-fluid rounded-start" alt="arma1">
     </div>
     <div class="col-md-7">
       <div class="card-body">
-        <h5 class="card-title">A história de Prince of Persia</h5>
-        <p class="card-text">Essa arma é liberada depois da missão "Fotos Quentes Demais", onde você recupera fotos "delicadas" da Moxxi, no vulcão Hefaesto e entrega a ela em vez do ex-namorado...</p> 
-        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="artigos.html"> Leia mais</a></button>
+        <h5 class="card-title">Call of Duty: Uma Jornada de Combate pela História</h5>
+        <p class="card-text">Call of Duty (COD) iniciou sua jornada em 2003 e desde então, evoluiu para se tornar uma das mais estimadas franquias de videogames, tendo captado a atenção de milhões globalmente...</p> 
+        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="artigos/cod.html"> Leia mais</a></button>
         
       </div>
     </div>
@@ -133,13 +150,13 @@
 <div class="card mb-3 mt-2" style="max-width: 660px;"><!--Segundo card-->
   <div class="row g-0">
     <div class="col-md-5">
-     <img src="imagens/artigos/arma2.jpg" class="img-fluid rounded-start fundoroxo" alt="arma2">
+     <img src="imagens/artigos/fallout.jpg" class="img-fluid rounded-start fundoroxo" alt="fallout">
     </div>
     <div class="col-md-7">
       <div class="card-body">
-        <h5 class="card-title">A relação entre Bioshock e Bioshock2</h5>
-        <p class="card-text fundoroxo">Essa arma é liberada depois da missão "A revolta dos cornos", onde você luta contra um exercito de ex-namorados da Moxxi que tentam invadir a casa dela...</p> 
-        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="artigos.html"> Leia mais</a></button>
+        <h5 class="card-title">Fallout: Uma Experiência Inesquecível em Jogos de RPG</h5>
+        <p class="card-text fundoroxo">A série Fallout, iniciada em 1997, é uma franquia altamente popular e respeitada de jogos de RPG. Com uma mistura única de ambientação pós-apocalíptica e estética retrô-futurista, Fallout capturou a imaginação de jogadores ao redor do mundo, estabelecendo-se como um marco no gênero de RPG...</p> 
+        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="artigos/fallout.html"> Leia mais</a></button>
         
       </div>
     </div>
@@ -150,13 +167,13 @@
 <div class="card mb-3 mt-2" style="max-width: 660px;"><!--terceiro card-->
   <div class="row g-0">
     <div class="col-md-5">
-     <img src="imagens/artigos/moxxi cosplay.jpg" class="img-fluid rounded-start" alt="moxxi cosplay">
+     <img src="imagens/artigos/Forza Horizon 5 (15).png" class="img-fluid rounded-start" alt="moxxi cosplay">
     </div>
     <div class="col-md-7">
       <div class="card-body">
-        <h5 class="card-title">A arte do cosplay</h5>
-        <p>Muitas pessoas gostam de usar cosplay, confira algumas customizações</p>
-        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="fanmade.html"> Leia mais</a></button>
+        <h5 class="card-title">Forza Horizon 5: O Nirvana do Automobilismo Reimaginado</h5>
+        <p>Forza Horizon 5, lançado em 2021 pela Playground Games e sendo publicado pela Xbox Game Studios, é o quinto título da popular série Forza Horizon e a décima segunda entrada principal na série Forza. Esta iteração do amado jogo de corrida revoluciona o paradigma do automobilismo no universo dos jogos</p>
+        <button type="button" class="btn btn-dark"><a class="linkSemEstilo" href="artigos/forzahorizon.html"> Leia mais</a></button>
 
       </div>
     </div>
@@ -183,57 +200,28 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
-          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <img src="imagens/artigos/mk.jpg" class="card-img-top h-50" alt="...">
           <div class="card-body">
-            <h5 class="card-title">StarFox</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Mortal Kombat: Um Ícone dos Jogos de Luta</h5>
+            <p class="card-text">Mortal Kombat é uma franquia de jogos de luta que se tornou um ícone cultural desde sua estréia nos anos 90. Conhecido por sua jogabilidade desafiadora, história complexa e, obviamente...<a href="artigos/mk.html">Leia mais</a></p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <img src="imagens/artigos/rdr2.jpg" class="card-img-top h-50" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a short card.</p>
+            <h5 class="card-title">Red Dead Redemption 2: Uma Aventura Western Remarkável</h5>
+            <p class="card-text">Red Dead Redemption 2, desenvolvido e publicado pela Rockstar Games em 2018, é a terceira entrada na série Red Dead e é uma prequela do jogo de 2010...<a href="artigos/rdr2.html">Leia mais</a></p>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
+          <img src="imagens/artigos/spider.jpg" class="card-img-top h-50" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100">
-          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card h-100">
-          <img src="imagens/artigos/starfox.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <h5 class="card-title">Spider-Man 2: A Sequência Triunfante</h5>
+            <p class="card-text">O Spider-Man 2, desenvolvido pela Insomniac Games e publicado pela Sony Interactive Entertainment, é uma sequência do jogo de sucesso Spider-Man. O jogo é amplamente reconhecido...<a href="artigos/spiderman.html">Leia mais</a></p>
           </div>
         </div>
       </div>

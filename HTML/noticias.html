@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+      <!-- FavIcon: Ruan-->
+      <link rel="icon" type="image/x-icon" href="imagens/home/logosemfundo.png">
+      
     <title>Gamebook Notícias</title>
   </head>
 <body>
@@ -26,16 +29,25 @@
         
 
         <div class="logo">
-        <a class="navbar-brand" href="../index.html">
-          <img class="logoimg" src="imagens/home/logosemfundo.png" alt="Logo">
+          <div class="tamanhologo  d-none d-sm-block d-sm-none d-md-block"><!--Tamanho da Logo para desktop-->
+        <a class="navbar-brand" href="index.html">
+          <img class="logoimg img-fluid" src="imagens/home/logo 1.png" alt="Logo">
         </a>
         </div>
 
-      <div class="buscacabecalho">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success " type="submit">Search</button>
-        </form>
+        <div class="tamanhologo  d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none "><!--Tamanho da Logo para mobile-->
+          <a class="navbar-brand" href="index.html">
+            <img class="logoimg img-fluid" src="imagens/home/logo 2.png" alt="Logo">
+          </a>
+          </div>
+      </div>
+
+        <div class=" buscacabecalho">
+          <form class="searchForm">
+            <div class="ocupaEspaço"></div>
+            <input class="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="searchButton" type="submit"><img class="searchIcon" src="../HTML/imagens/home/lupabranca.png"> </button>
+          </form>
         </div>
 
         <div class="headeruser ">
@@ -73,39 +85,65 @@
       </a>
 
     </div>
-</header>
 
-<!--PEDAÇO DE PÃO!-->
- <div class="bg-dark bg-gradient"><!--Pedaço de pão na rua pro cabra se situar-->
-<div class="container pb-2">
-<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Notícias</li>
-  </ol>
-</nav>
-</div>
-</div><!--FIM DO PEDAÇO DE PÃO!-->
+    <div class="divSeparacao"><!--breadcrumbs-->
+      <div class="pb">
+      </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Notícias</li>
+      </ol>
+    </nav>
+</header>
 
 
 <section><!--COMEÇO DO CONTEÚDO!-->
 <div class="container artigos">
   <div class="d-flex justify-content-center pt-5">
   <h2>Notícias</h2></div>   
-    <div class="d-flex justify-content-center pt-3"><!--lista de tópicos-->
-      <div class="btn-group " role="group" aria-label="Basic example">
-        <div class="row">
-        <button type="button" class="btn btn-primary col"><a href="#ultimasnoticias">Ultimas notícias</a></button>
-        <button type="button" class="btn btn-primary col"><a href="#mmo">MMO</a></button>
-        <button type="button" class="btn btn-primary col"><a href="#acao">Ação</a></button>
-        <button type="button" class="btn btn-primary col"><a href="#aventura">Aventura</a></button>
-        <button type="button" class="btn btn-primary col"><a href="#corrida">Corrida</a></button>
-        <button type="button" class="btn btn-primary col"><a href="#esportes">Esportes</a></button>
-        <button type="button" class="btn btn-primary col"><a href="#outras">Outras notícias</a></button>
-        <button type="button" class="btn btn-primary col"><a href="#parceiros">Sites parceiros</a></button>
-     </div>
+  <div class="d-flex justify-content-center pt-3"><!--lista de tópicos-->
+    <div class="">
+
     </div>
-    </div><!--FIM lista de tópicos-->
+    <div class="navDiv">
+
+      <a class="linkButtons" href="#ultimasnoticias">
+        <button class="buttonNavTopics">Ultimas Noticias</button>           
+      </a>
+  
+      <a class="linkButtons" href="#mmo">
+        <button class="buttonNavTopics">MMO</button>
+      </a>
+        
+      <a class="linkButtons" href="#acao">
+        <button class="buttonNavTopics">Ação</button>
+      </a>
+
+      <a class="linkButtons" href="#aventura">
+        <button class="buttonNavTopics">Aventura</button>           
+      </a>
+    
+      <a class="linkButtons" href="#corrida">
+        <button class="buttonNavTopics">Corrida</button>
+      </a>
+          
+      <a class="linkButtons" href="#esportes">
+        <button class="buttonNavTopics">Esportes</button>
+      </a>
+
+      <a class="linkButtons" href="#outras">
+        <button class="buttonNavTopics">Outras notícias</button>
+      </a>
+          
+      <a class="linkButtons" href="#parceiros">
+        <button class="buttonNavTopics">Site parceiros</button>
+      </a>
+  
+  </div>
+  </div><!--FIM lista de tópicos-->
+
  
  
   <div class="row pt-4 pb-5">   <!--INICIO DOS CARDS-->
@@ -134,12 +172,12 @@
 
     <div class="col-lg-4 pt-3 h-75"><!--TERCEIRO CARD-->
       <div class="card" style="width: auto; background-color: blueviolet;">
-        <img src="imagens/noticias/stalker2.jpg" class="card-img-top" alt="...">
+        <a href="noticias/stalker.html"><img src="imagens/noticias/stalker2.jpg" class="card-img-top" alt="..."></a>
         <div class="card-body">
           <h4 class="card-title">S. T. A. L. K. E. R. 2: Heart of Chornobyl</h4>
           <p class="card-text">O jogo produzido pela <a href="https://en.wikipedia.org/wiki/GSC_Game_World"><strong>GSC Game World</strong></a>
             tem data de lançamento prevista para o dia 05 de setembro deste ano, o jogo se passa no futuro apos os acontecimentos do jogo anterior com a mesmas tematicas porém com mais enfáse na historia do game pelo que apresenta no seu trailer <a href="https://www.youtube.com/watch?v=XNGbS0fY80s">clique aqui</a> e veja.</p>
-          <a href="#" class="btn btn-dark">Leia mais</a>
+          <a href="noticias/stalker.html" class="btn btn-dark">Leia mais</a>
         </div>
       </div>
     </div>
@@ -165,13 +203,12 @@
       <div class="card mb-4 w-75 " style="background-color:blueviolet;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="imagens/noticias/wow.jpg" class="img-fluid rounded-start mt-3" alt="...">
+            <a href="noticias/rdr.html"><img src="imagens/noticias/wow.jpg" class="img-fluid rounded-start mt-3" alt="..."></a>
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Sucesso mesmo com 20 anos de lançado!</h5>
-              <p class="card-text">Desde seu lançamento em 2004 pela <a href="https://pt.wikipedia.org/wiki/Blizzard_Entertainment"><strong>Blizzard</strong></a>, <a href="https://pt.wikipedia.org/wiki/World_of_Warcraft"><strong>World of WarCraft</strong></a> mantém seu hype e consegue manter seus jogadores sempre ativos, isso devido a seu metodo de assinatura que arca com as despesas dos desenvolvedores que sempre estão trazendo packs de atualização com novas historias e itens bem elaborados...<a href="warcraft.html">Leia mais</a></p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p class="card-text">Desde seu lançamento em 2004 pela <a href="https://pt.wikipedia.org/wiki/Blizzard_Entertainment"><strong>Blizzard</strong></a>, <a href="https://pt.wikipedia.org/wiki/World_of_Warcraft"><strong>World of WarCraft</strong></a> mantém seu hype e consegue manter seus jogadores sempre ativos, isso devido a seu metodo de assinatura que arca com as despesas dos desenvolvedores que sempre estão trazendo packs de atualização com novas historias e itens bem elaborados...<a href="noticias/wow.html">Leia mais</a></p>
             </div>
           </div>
         </div>
@@ -185,13 +222,12 @@
       <div class="card mb-4 w-75 " style="background-color:blueviolet;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="imagens/noticias/rdr2.jpg" class="img-fluid rounded-start mt-3" alt="...">
+            <a href="noticias/rdr.html"><img src="imagens/noticias/rdr2.jpg" class="img-fluid rounded-start mt-3" alt="..."></a>
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Red Dead Redemption</h5>
-              <p class="card-text">Você sabe que neste game o primeiro jogo a ser lançado não foi o Red Dead Redemption 1 e sim o Red Dead Redemption revolver que foi lançado em 2004 para o Playstation 2, não e novidade que essa trilogia que se passa no velho Oeste aparentemente se tornara uma saga pois a rockstar confrimou o desenvolimento do 4 jogo, que provavelmente seria lançado após 2025.</p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p class="card-text">Você sabe que neste game o primeiro jogo a ser lançado não foi o Red Dead Redemption 1 e sim o Red Dead Redemption revolver que foi lançado em 2004 para o Playstation 2, não e novidade que essa trilogia que se passa no velho Oeste aparentemente se tornara uma saga pois a rockstar confrimou o desenvolimento do 4 jogo, que provavelmente seria lançado após 2025. <a href="noticias/rdr.html">Leia mais</a></p>
             </div>
           </div>
         </div>
@@ -205,13 +241,12 @@
       <div class="card mb-4 w-75 " style="background-color:blueviolet;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="imagens/noticias/witcher.jpg" class="img-fluid rounded-start mt-3" alt="...">
+            <a href="noticias/witcher.html"><img src="imagens/noticias/witcher.jpg" class="img-fluid rounded-start mt-3" alt="..."></a>
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">Nova Expansão de "The Witcher 3" Anunciada</h5>
-              <p class="card-text">A CD Projekt Red anunciou uma nova expansão para "The Witcher 3: Wild Hunt", intitulada "Echoes of the Past". A expansão trará novos personagens, missões e regiões para explorar, além de melhorias gráficas e de desempenho. A data de lançamento está prevista para o final deste ano.</p>
-              <p class="card-text"><small>Last updated 3 mins ago</small></p>
+              <p class="card-text">A CD Projekt Red anunciou uma nova expansão para "The Witcher 3: Wild Hunt", intitulada "Echoes of the Past". A expansão trará novos personagens, missões e regiões para explorar, além de melhorias gráficas e de desempenho. A data de lançamento está prevista para o final deste ano. <a href="noticias/witcher.html">Leia mais</a></p></p>
             </div>
           </div>
         </div>
@@ -258,9 +293,9 @@
                 <h5 class="card-title">Evento de Verão do "Overwatch 2" Começa Esta Semana</h5>
                 <p class="card-text"> A Blizzard Entertainment anunciou que o evento de verão de "Overwatch 2" começará esta semana. O evento incluirá 
                   novos modos de jogo, skins temáticas e desafios semanais. Os jogadores poderão ganhar recompensas exclusivas ao 
-                  participar dos eventos durante o período limitado.
+                  participar dos eventos durante o período limitado.<a href="noticias/over2.html">Leia mais</a>
           </p>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
               </div>
             </div>
           </div>
@@ -271,25 +306,24 @@
   
       <div class="carousel-item"><!--SEGUNDO CARD-->
         <div class="d-flex justify-content-center">
-        <div class="card mb-4 w-75 " style="background-color:blueviolet;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img src="imagens/noticias/wow.jpg" class="img-fluid rounded-start  mt-3" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Sucesso mesmo com 20 anos de lançado!</h5>
-                <p class="card-text">Desde seu lançamento em 2004 pela <a href="https://pt.wikipedia.org/wiki/Blizzard_Entertainment"><strong>Blizzard</strong></a>, <a href="https://pt.wikipedia.org/wiki/World_of_Warcraft"><strong>World of WarCraft</strong></a> mantém seu hype e consegue manter seus jogadores sempre ativos, isso devido a seu metodo de assinatura que arca com as despesas dos desenvolvedores que sempre estão trazendo packs de atualização com novas historias e itens bem elaborados...<a href="warcraft.html">Leia mais</a></p>
-                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          <div class="card mb-4 w-75 " style="background-color:blueviolet;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <a href="noticias/rdr.html"><img src="imagens/noticias/wow.jpg" class="img-fluid rounded-start mt-3" alt="..."></a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Sucesso mesmo com 20 anos de lançado!</h5>
+                  <p class="card-text">Desde seu lançamento em 2004 pela <a href="https://pt.wikipedia.org/wiki/Blizzard_Entertainment"><strong>Blizzard</strong></a>, <a href="https://pt.wikipedia.org/wiki/World_of_Warcraft"><strong>World of WarCraft</strong></a> mantém seu hype e consegue manter seus jogadores sempre ativos, isso devido a seu metodo de assinatura que arca com as despesas dos desenvolvedores que sempre estão trazendo packs de atualização com novas historias e itens bem elaborados...<a href="noticias/wow.html">Leia mais</a></p>
+                </div>
               </div>
             </div>
-          </div>
-          </div>
+            </div>
         </div>
       </div>
   
   
-      <div class="carousel-item "><!--TERCEIRO CARD-->
+      <!--<div class="carousel-item ">TERCEIRO CARD
         <div class="d-flex justify-content-center">
         <div class="card mb-4 w-75 " style="background-color:blueviolet;">
           <div class="row g-0">
@@ -306,7 +340,7 @@
           </div>
           </div>
         </div>
-      </div>
+      </div>-->
   
     
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselMMO" data-bs-slide="prev">
@@ -341,16 +375,15 @@
           <div class="card mb-4 w-75" style="background-color:blueviolet;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="imagens/noticias/kim3.jpg" class="img-fluid rounded-start  mt-3" alt="...">
+                <a href="noticias/ff.html"><img src="imagens/noticias/ff2.jpg" class="img-fluid rounded-start  mt-3" alt="..."></a>
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Evento de Verão do "Overwatch 2" Começa Esta Semana</h5>
-                  <p class="card-text"> A Blizzard Entertainment anunciou que o evento de verão de "Overwatch 2" começará esta semana. O evento incluirá 
-                    novos modos de jogo, skins temáticas e desafios semanais. Os jogadores poderão ganhar recompensas exclusivas ao 
-                    participar dos eventos durante o período limitado.
+                  <h5 class="card-title">Novo Trailer de "Final Fantasy XVI" Revela Mais da História</h5>
+                  <p class="card-text">A Square Enix lançou um novo trailer de "Final Fantasy XVI", oferecendo um vislumbre mais aprofundado da história 
+                    e dos personagens do jogo. O trailer destaca os conflitos entre os reinos e apresenta cenas de gameplay impressionantes. 
+                    "Final Fantasy XVI" está programado para ser lançado no próximo ano. <a href="noticias/ff.html">Leia mais</a>
             </p>
-                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
                 </div>
               </div>
             </div>
@@ -364,13 +397,14 @@
           <div class="card mb-4 w-75 " style="background-color:blueviolet;">
             <div class="row g-0">
               <div class="col-md-4">
-                <img src="imagens/noticias/assassins.jpg" class="img-fluid rounded-start  mt-3" alt="...">
+                <a href="noticias/cyber.html"><img src="imagens/noticias/cyberpunk.jpg" class="img-fluid rounded-start  mt-3" alt="..."></a>
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Sucesso mesmo com 20 anos de lançado!</h5>
-                  <p class="card-text">Desde seu lançamento em 2004 pela <a href="https://pt.wikipedia.org/wiki/Blizzard_Entertainment"><strong>Blizzard</strong></a>, <a href="https://pt.wikipedia.org/wiki/World_of_Warcraft"><strong>World of WarCraft</strong></a> mantém seu hype e consegue manter seus jogadores sempre ativos, isso devido a seu metodo de assinatura que arca com as despesas dos desenvolvedores que sempre estão trazendo packs de atualização com novas historias e itens bem elaborados...<a href="warcraft.html">Leia mais</a></p>
-                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                  <h5 class="card-title">Cyberpunk 2077" Recebe Grande Atualização</h5>
+                  <p class="card-text">O jogo "Cyberpunk 2077" recebeu uma nova atualização que corrige diversos bugs e melhora a performance em todas 
+                    as plataformas. Além das correções, a atualização também adiciona novos conteúdos, incluindo missões secundárias 
+                    e armas. A CD Projekt Red continua comprometida em melhorar a experiência dos jogadores.<a href="noticias/cyber.html">Leia mais</a></p>
                 </div>
               </div>
             </div>

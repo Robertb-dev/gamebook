@@ -16,6 +16,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
+      <!-- FavIcon: Ruan-->
+      <link rel="icon" type="image/x-icon" href="imagens/home/logosemfundo.png">
+      
     <title>Gamebook noticias</title>
   </head>
 <body>
@@ -26,16 +29,25 @@
         
 
         <div class="logo">
-        <a class="navbar-brand" href="../index.html">
-          <img class="logoimg" src="imagens/home/logosemfundo.png" alt="Logo">
+          <div class="tamanhologo  d-none d-sm-block d-sm-none d-md-block"><!--Tamanho da Logo para desktop-->
+        <a class="navbar-brand" href="index.html">
+          <img class="logoimg img-fluid" src="imagens/home/logo 1.png" alt="Logo">
         </a>
         </div>
 
-      <div class="buscacabecalho">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success " type="submit">Search</button>
-        </form>
+        <div class="tamanhologo  d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none "><!--Tamanho da Logo para mobile-->
+          <a class="navbar-brand" href="index.html">
+            <img class="logoimg img-fluid" src="imagens/home/logo 2.png" alt="Logo">
+          </a>
+          </div>
+      </div>
+
+        <div class=" buscacabecalho">
+          <form class="searchForm">
+            <div class="ocupaEspaço"></div>
+            <input class="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="searchButton" type="submit"><img class="searchIcon" src="../HTML/imagens/home/lupabranca.png"> </button>
+          </form>
         </div>
 
         <div class="headeruser ">
@@ -57,11 +69,11 @@
         </a>
 
       <a class="linkButtons" href="../index.html">
-        <button class="buttonNavActual">Home</button>
+        <button class="buttonNav">Home</button>
       </a>
       
       <a class="linkButtons" href="quemsomos.html">
-        <button class="buttonNav">Quem Somos</button>
+        <button class="buttonNavActual">Quem Somos</button>
       </a>
 
       <a class="linkButtons" href="fanmade.html">
@@ -73,24 +85,21 @@
       </a>
 
     </div>
+
+    <div class="divSeparacao"><!--breadcrumbs-->
+      <div class="pb">
+      </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Que Somos</li>
+      </ol>
+    </nav>
 </header>
 
-
-<div class="bg-dark bg-gradient"><!--Pedaço de pão na rua pro cabra se situar-->
-  <div class="container pb-2">
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Quem Somos</li>
-    </ol>
-  </nav>
-  </div>
-  </div>
-  
-
-
   <section>
-    <div class="container  pt-5">
+    <div class="container  pt-5"><!--DESCRIÇÃO-->
       
       <div class="d-flex justify-content-center">
         <h2>Sobre a Gamebook</h2>
@@ -99,7 +108,66 @@
       <div class="d-flex justify-content-center">
       <div class="somosdescricao p-3">
       <div class="">
-        <p>Blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá  blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá</p>
+        <p>A GameBook é uma empresa líder no mercado de análises de jogos, dedicada a fornecer avaliações detalhadas e imparciais sobre os mais recentes lançamentos e clássicos do universo dos games. Fundada com a missão de conectar jogadores e entusiastas a informações precisas e úteis, a GameBook se estabeleceu como uma referência confiável para quem busca entender profundamente o mundo dos jogos eletrônicos.</p>
+     </div> 
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container  pt-5"><!--MISSÃO-->
+      
+      <div class="d-flex justify-content-center">
+        <h2>Nossa Missão</h2>
+      </div>
+
+      <div class="d-flex justify-content-center">
+      <div class="somosdescricao p-3">
+      <div class="">
+        <p>Na GameBook, nossa missão é simples: ajudar os jogadores a tomarem decisões informadas. Sabemos que o universo dos games é vasto e diversificado, e que cada jogador tem suas próprias preferências e interesses. Por isso, nos comprometemos a oferecer análises abrangentes e críticas fundamentadas que considerem todos os aspectos de um jogo, desde gráficos e jogabilidade até narrativa e inovação.</p>
+     </div> 
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container  pt-5">
+      
+      <div class="d-flex justify-content-center">
+        <h2>O Que Fazemos</h2>
+      </div>
+
+      <div class="d-flex justify-content-center">
+      <div class="somosdescricao p-3">
+      <div class="">
+        <p>Análises Profundas e Imparciais: Nossa equipe de especialistas é composta por jogadores apaixonados e críticos experientes que avaliam cada jogo com rigor e objetividade. Nossas análises cobrem todos os gêneros e plataformas, garantindo que você encontre informações detalhadas sobre jogos de console, PC, e dispositivos móveis.</p>
+
+        <P>Notícias e Tendências: Além de análises, mantemos nossos leitores atualizados com as últimas notícias e tendências da indústria dos games. Desde anúncios de novos lançamentos até atualizações sobre desenvolvimentos tecnológicos, nossa seção de notícias é o lugar ideal para ficar por dentro de tudo o que acontece no mundo dos jogos.</P>
+          
+        <P>Guias e Dicas: Oferecemos uma variedade de guias e dicas para ajudar jogadores de todos os níveis a aproveitarem ao máximo seus jogos favoritos. Nossos guias incluem desde tutoriais de estratégias básicas até dicas avançadas para dominar os jogos mais desafiadores.</p>
+     </div> 
+    </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container  pt-5">
+      
+      <div class="d-flex justify-content-center">
+        <h2>Nossos Valores</h2>
+      </div>
+
+      <div class="d-flex justify-content-center">
+      <div class="somosdescricao p-3">
+      <div class="">
+        <p>Transparência: Acreditamos na importância de fornecer informações claras e honestas. Nossas análises são livres de influências externas e focadas em oferecer uma visão realista e justa de cada jogo.</p>
+
+        <P>Paixão por Jogos: Somos movidos pela paixão pelo universo dos games. Essa paixão se reflete em nosso compromisso de oferecer conteúdos de alta qualidade que realmente agregam valor à experiência dos nossos leitores.</P>
+          
+        <P>Comunidade: Valorizamos a comunidade de jogadores e encorajamos a interação e o feedback. A GameBook é um espaço onde os jogadores podem compartilhar suas opiniões, discutir suas experiências e aprender uns com os outros.</p>
      </div> 
     </div>
       </div>
@@ -109,79 +177,147 @@
 <section>
 <div class="container">
 <div class="d-flex justify-content-center pt-5">
-  <h2>Integrantes</h2>
+  <h2>Nossa Equipe</h2>
 </div>
 
 <div class="d-flex justify-content-center"><!--CARD 1 ROBERT-->
-<div class="card mb-3" style="max-width: 760px; background-image: url(imagens/quemsomos/the-matrix-digital-rain.jpg);">
+<div class="card mb-3" style="max-width: 760px;">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="imagens/quemsomos/IMG_9414.jpg" class="img-fluid rounded-start" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title" style="background-color: black;">Robert Bruce</h5>
-        <p class="card-text" style="background-color: black;">Blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá  blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá</p>
+        <h5 class="card-title">Robert Bruce</h5>
+        <p class="card-text">Sou programador Front-end e atual Ceo do Gamebook, antes disso trabalhei na Eneriv, Row Games, e na Oil and Water Company em diversas áreas da programação e administração. Nas horas vagas costumo jogar retrô games, leio histórias de super herois e debato ideias sobre cultura com desconhecidos nas redes sociais, sempre dentro do tom e com muito respeito. Reconheço meu vício em pipoca porém não tenho intenção de tratar e por fim, toda a franquia Far Cry é Far Cry 3. </p>
         
       </div>
     </div>
   </div>
 </div>
-</div><!-- FIM DO CARD 1 ROBERT-->
+</div>
 
 
-<div class="d-flex justify-content-center"><!--CARD 1 ROBERT-->
+<div class="d-flex justify-content-center"><!--CARD 2 Raquel-->
   <div class="card mb-3" style="max-width: 760px;">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="..." class="img-fluid rounded-start" alt="...">
+        <img src="imagens/quemsomos/raquel.jpg" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Raquel</h5>
-          <p class="card-text">Blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá  blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá</p>
+          <h5 class="card-title">Raquel Figueiredo</h5>
+          <p class="card-text">Nascida no Rio de Janeiro, mudei-me para São Paulo para trabalhar. Aqui, participei de um bootcamp de programação de Java, por isso interessei-me pela área de tecnologia ainda mais, pois já era um sonho de infância. Atualmente, estou cursando Ciências da Computação para obter uma base mais sólida no que faço.</p>
           
         </div>
       </div>
     </div>
   </div>
-  </div><!-- FIM DO CARD 1 ROBERT-->
+  </div>
 
 
-  <div class="d-flex justify-content-center"><!--CARD 1 ROBERT-->
+  <div class="d-flex justify-content-center"><!--CARD 3 Ruan-->
     <div class="card mb-3" style="max-width: 760px;">
       <div class="row g-0">
         <div class="col-md-4">
-          <img src="..." class="img-fluid rounded-start" alt="...">
+          <img src="imagens/quemsomos/ruanmorale.jpg" class="img-fluid rounded-start" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Robert Bruce</h5>
-            <p class="card-text">Blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá  blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá</p>
+            <h5 class="card-title">Ruan Tolentino</h5>
+            <p class="card-text">Olá, eu sou Ruan Tolentino, aspirante a muitas coisas, como design, basquete, cozinha e programação, impressionantemente, não sou muito bom em nenhum, mas não se pode ter tudo nessa vida, então me mantenho praticando.</p>
             
           </div>
         </div>
       </div>
     </div>
-    </div><!-- FIM DO CARD 1 ROBERT-->
+    </div>
 
 
-    <div class="d-flex justify-content-center"><!--CARD 1 ROBERT-->
+    <div class="d-flex justify-content-center"><!--CARD 4 Paula-->
       <div class="card mb-3" style="max-width: 760px;">
         <div class="row g-0">
           <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
+            <img src="imagens/quemsomos/paula.jpeg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Robert Bruce</h5>
-              <p class="card-text">Blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá  blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá blá</p>
+              <h5 class="card-title">Paula Figueiredo</h5>
+              <p class="card-text">Programadora back-end, apaixonada por lógica e instruções claras, o resto não interessa.</p>
               
             </div>
           </div>
         </div>
       </div>
-      </div><!-- FIM DO CARD 1 ROBERT-->
+      </div>
+
+      <div class="d-flex justify-content-center"><!--CARD 5 TUTS-->
+        <div class="card mb-3" style="max-width: 760px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="imagens/quemsomos/arthur.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Arthur Dias</h5>
+                <p class="card-text">Olá! Sou o Arthur, tenho 22 anos e estou focado nos estudos de Ciências da Computação. Sempre gostei da área da tecnologia, amo jogo online especialmente quando se trata de jogos no estilo MMORPG. Estou determinado em minha jornada para me tornar um Dev, estou sempre buscando ampliar meu conhecimento e habilidades nesse campo dinâmico.</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="d-flex justify-content-center"><!--CARD 6 NANDES-->
+          <div class="card mb-3" style="max-width: 760px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="imagens/quemsomos/nandes.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Caroline Fernandes</h5>
+                  <p class="card-text">Sou designer, gosto de uma leitura simples da arte, o minimalismo transmite diretamente a ideia que precisa ser passada. Nas horas vagas gosto de ler livros de romance, gosto de comprar maquiagens e comprar joias.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="d-flex justify-content-center"><!--CARD 7 VITORIA-->
+            <div class="card mb-3" style="max-width: 760px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="imagens/quemsomos/vi.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Vitória Milene</h5>
+                    <p class="card-text">Sou artista digital com experiência em modelos 2D e animação em Mesh. Gosto de produzir arte que tenha personalidade e que comunique fortes emoções. Sou entusiasta de jogos de terror e rpg, e nas horas vagas gosto de brincar com minha cachorrinha chamada Nico.</p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="d-flex justify-content-center"><!--CARD 8 RICARDO JUNIOR-->
+              <div class="card mb-3" style="max-width: 760px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="imagens/quemsomos/ricardo.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Ricardo José</h5>
+                      <p class="card-text">Olá, me chamo Ricardo, moro em Pernambuco, tenho 20 anos, e almejo me especializar na área de front-end, mas especificamente como analista de front...</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
 
 
 

@@ -11,6 +11,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+      <!-- FavIcon: Ruan-->
+      <link rel="icon" type="image/x-icon" href="imagens/home/logosemfundo.png">
+      
     <title>Gamebook</title>
   </head>
 <body>
@@ -21,16 +24,25 @@
         
 
         <div class="logo">
-        <a class="navbar-brand" href="../index.html">
-          <img class="logoimg" src="imagens/home/logosemfundo.png" alt="Logo">
+          <div class="tamanhologo  d-none d-sm-block d-sm-none d-md-block"><!--Tamanho da Logo para desktop-->
+        <a class="navbar-brand" href="index.html">
+          <img class="logoimg img-fluid" src="imagens/home/logo 1.png" alt="Logo">
         </a>
         </div>
 
-      <div class="buscacabecalho">
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success " type="submit">Search</button>
-        </form>
+        <div class="tamanhologo  d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none "><!--Tamanho da Logo para mobile-->
+          <a class="navbar-brand" href="index.html">
+            <img class="logoimg img-fluid" src="imagens/home/logo 2.png" alt="Logo">
+          </a>
+          </div>
+      </div>
+
+        <div class=" buscacabecalho">
+          <form class="searchForm">
+            <div class="ocupaEspaço"></div>
+            <input class="searchInput" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="searchButton" type="submit"><img class="searchIcon" src="../HTML/imagens/home/lupabranca.png"> </button>
+          </form>
         </div>
 
         <div class="headeruser ">
@@ -52,7 +64,7 @@
         </a>
 
       <a class="linkButtons" href="../index.html">
-        <button class="buttonNavActual">Home</button>
+        <button class="buttonNav">Home</button>
       </a>
       
       <a class="linkButtons" href="quemsomos.html">
@@ -64,10 +76,21 @@
       </a>
 
       <a class="linkButtons" href="login.html">
-        <button class="buttonNav">Login</button>
+        <button class="buttonNavActual">Login</button>
       </a>
 
     </div>
+
+    <div class="divSeparacao"><!--breadcrumbs-->
+      <div class="pb">
+      </div>
+    </div>
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Login</li>
+      </ol>
+    </nav>
 </header>
 
 <section>
@@ -86,7 +109,7 @@
       </div>
 
       <div class="d-flex justify-content-center pt-3">
-        <button type="button" class="botaolink "><a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjlgtvsvd6FAxVSuJUCHcgcABsQPAgJ" target="_blank" ><img src="imagens/login/google.png">Inscreva-se com o google</a></button>
+        <button type="button" class="botaolink "><a href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwjlgtvsvd6FAxVSuJUCHcgcABsQPAgJ" target="_blank" ><img src="imagens/login/favicon.ico">Inscreva-se com o google</a></button>
       </div>
 
       <div class="d-flex justify-content-center pt-3">
